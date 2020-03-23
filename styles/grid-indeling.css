@@ -1,0 +1,8 @@
+.grid-container {
+	display: grid;
+	min-height: 600px;
+	grid-template-areas: 
+			"section1"
+			"section2"
+		
+}
