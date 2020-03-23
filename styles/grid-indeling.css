@@ -1,8 +1,59 @@
 .grid-container {
 	display: grid;
 	min-height: 600px;
+	grid-gap: 0px;
 	grid-template-areas: 
-			"section1"
-			"section2"
+			"header"
+			"main"
+			"footer"
 		
+}
+
+.box1{
+	grid-area: header;
+}
+
+.box2{
+	grid-area: main;
+}
+
+.box3{
+	grid-area: footer;
+}
+
+
+@media only screen and (min-width: 760px) and (max-width: 980px) {
+	.grid-container {
+		display: grid;
+		min-height: 600px;
+		grid-gap: 0px;
+		grid-template-areas: 
+				"header header"
+				"main main"
+				"footer footer"
+	}
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1300px) {
+	.grid-container {
+		display: grid;
+		min-height: 600px;
+		grid-gap: 0px;
+		grid-template-areas:
+				"header header header"
+				"main main main"
+				"footer footer footer"
+	}
+}	
+
+@media only screen and (min-width: 1300px) and (max-width: 2000px) {
+	.grid-container {
+		display: grid;
+		min-height: 600px;
+		grid-gap: 0px;
+		grid-template-areas: 
+				"header header header"
+				"main main main"
+				"footer footer footer"
+	}
 }

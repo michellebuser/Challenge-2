@@ -1,5 +1,9 @@
 setInterval(clockHands, 1);
-setInterval(changeBackground,1) //nog aanpassen
+setInterval(changeBackground,1) 
+/* de verandering van de achtergrond is nu om de 15 seconden
+    om aan te tonen dat er om de zoveel tijd een visuele verandering
+    zichtbaar is. Dit moet in het echt natuurlijk om de 6 uur zijn.
+*/    
 
 
 function clockHands (){

@@ -25,7 +25,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(clock.png);
+  background: url("../images/clock.png");
   background-size: cover;
   border: 5px solid white;
   border-radius: 50%;
@@ -119,7 +119,7 @@ body {
 
 .morning{
   margin: 0;
-  background-image: url("sunrise.jpg");
+  background-image: url("../images/sunrise.jpg");
   transition: background-image 4s cubic-bezier(0.37, 0, 0.63, 1);
   background-size: 100% 75%; 
   background-color: #FFFFFF;
@@ -127,7 +127,7 @@ body {
 }
 
 .afternoon{
-  background-image: url("daytime.jpg");
+  background-image: url("../images/daytime.jpg");
   transition: background-image 4s cubic-bezier(0.37, 0, 0.63, 1); 
   background-size: 100% 75%; 
   background-color: #FFFFFF;
@@ -135,7 +135,7 @@ body {
 }
 
 .evening{
-  background-image: url("sunset.jpg");
+  background-image: url("../images/sunset.jpg");
   transition: background-image 4s cubic-bezier(0.37, 0, 0.63, 1);
   background-size: 100% 75%;  
   background-color: #FFFFFF;
@@ -143,10 +143,201 @@ body {
 }
 
 .night{
-  background-image: url("night.jpg");
+  background-image: url("../images/night.jpg");
   transition: background-image 4s cubic-bezier(0.37, 0, 0.63, 1); 
   background-size: 100% 75%; 
   background-color: #FFFFFF;
   background-repeat: no-repeat;
 }
 
+
+
+@media only screen and (min-width: 700px) and (max-width: 980px) {
+  .clock {
+    width: 230px;
+    height: 230px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .clock::before {
+    width: 12px;
+    height: 12px; 
+  }
+
+  .hour, .hr {
+    width: 130px;
+    height: 130px;
+  }  
+  
+
+  .minute, .min {
+    width: 160px;
+    height: 160px;
+ }
+
+  .second, .sec {
+    width: 192px;
+    height: 192px;
+  }
+
+
+  .hr::before {
+    width: 7px;
+    height: 65px;
+  }
+
+  .min::before {
+    width: 5px;
+    height: 80px;   
+  }
+
+  .sec::before {
+    width: 3px;
+    height: 120px;
+  }
+
+  .morning{
+    background-size: 100% 85%; 
+  }
+
+  .afternoon{
+    background-size: 100% 85%; 
+  }
+
+  .evening{
+    background-size: 100% 85%; 
+  }
+
+  .night{
+    background-size: 100% 85%; 
+  }
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1300px) {
+  .clock {
+    width: 260px;
+    height: 260px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clock::before {
+    width: 14px;
+    height: 14px; 
+  }
+
+  .hour, .hr {
+    width: 160px;
+    height: 160px;
+  }  
+  
+
+  .minute, .min {
+    width: 190px;
+    height: 190px;
+ }
+
+  .second, .sec {
+    width: 222px;
+    height: 222px;
+  }
+
+
+  .hr::before {
+    width: 8px;
+    height: 85px;
+  }
+
+  .min::before {
+    width: 6px;
+    height: 100px;   
+  }
+
+  .sec::before {
+    width: 4px;
+    height: 150px;
+  }
+
+
+  .morning{
+    background-size: 100% 95%; 
+  }
+
+  .afternoon{
+    background-size: 100% 95%; 
+  }
+
+  .evening{
+    background-size: 100% 95%; 
+  }
+
+  .night{
+    background-size: 100% 95%; 
+  }
+
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 2000px) {
+   .clock {
+    width: 290px;
+    height: 290px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clock::before {
+    width: 16px;
+    height: 16px; 
+  }
+
+  .hour, .hr {
+    width: 190px;
+    height: 190px;
+  }  
+  
+
+  .minute, .min {
+    width: 210px;
+    height: 210px;
+ }
+
+  .second, .sec {
+    width: 252px;
+    height: 252px;
+  }
+
+
+  .hr::before {
+    width: 9px;
+    height: 105px;
+  }
+
+  .min::before {
+    width: 7px;
+    height: 120px;   
+  }
+
+  .sec::before {
+    width: 5px;
+    height: 170px;
+  }
+
+  .morning{
+    background-size: 100% 100%; 
+  }
+
+  .afternoon{
+    background-size: 100% 100%; 
+  }
+
+  .evening{
+    background-size: 100% 100%; 
+  }
+
+  .night{
+    background-size: 100% 100%; 
+  }
+
+}
